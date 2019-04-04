@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import AccueilPanel from "./components/AccueilPanel";
+import ContactPanel from "./components/ContactPanel";
+import ShowReelPanel from "./components/ShowReelPanel";
+import WorksPanels from "./components/WorksPanels";
 import Nav from "./components/Nav";
 
 class App extends Component {
@@ -9,7 +12,12 @@ class App extends Component {
         return (
             <div className="App">
                 <Nav />
-                <AccueilPanel />
+                <div className="container">
+                    <AccueilPanel />
+                    <ContactPanel />
+                    <ShowReelPanel />
+                    <WorksPanels />
+                </div>
             </div>
         );
     }

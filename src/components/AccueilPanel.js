@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-export default class componentName extends Component {
+export default class AccueilPanel extends Component {
     render() {
         return (
-            <section className="accueil">
+            <section id="home" className="accueil">
                 <h1>
                     Maxime
                     <br />

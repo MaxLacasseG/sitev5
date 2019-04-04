@@ -6,10 +6,10 @@ class Nav extends Component {
         const { t } = this.props;
         return (
             <nav className="mainNav">
-                <a href="">{t("accueil")}</a>
-                <a href="">{t("contact")}</a>
-                <a href="">{t("projets_recents")}</a>
-                <a href="">{t("contact")}</a>
+                <a href="#home">{t("accueil")}</a>
+                <a href="#contact">{t("contact")}</a>
+                <a href="#works">{t("projets_recents")}</a>
+                <a href="#showreel">{t("showreel")}</a>
             </nav>
         );
     }
