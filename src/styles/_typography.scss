@@ -1,6 +1,49 @@
-$main_font: "Arial";
+/*font-family: 'Charm', cursive;
+font-family: 'East Sea Dokdo', cursive;
+font-family: 'Yeon Sung', cursive;
+font-family: 'Vollkorn SC', serif;
+font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Zilla Slab Highlight', cursive;
+font-family: 'Staatliches', cursive;*/
+
+$main_font: "Vollkorn SC", sans-serif;
+$alternative_font: "East Sea Dokdo", sans-serif;
+$reading_font: "Vollkorn SC", sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $main_font;
+    color: $main_color;
+}
+
+p,
+a,
+caption,
+li,
+input {
+    font-family: $reading_font;
+    color: $second_color;
+}
 
 h1 {
-    font-family: $main_font;
-    color: $second_color;
+    font-size: 5em;
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+    &:active,
+    &:visited,
+    &:hover {
+        color: $second_color;
+    }
+}
+nav {
+    & a {
+        text-transform: uppercase;
+        font-family: $alternative_font;
+    }
 }

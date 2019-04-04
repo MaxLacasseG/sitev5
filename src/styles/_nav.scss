@@ -1,0 +1,21 @@
+nav {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    min-height: 5vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: $nav;
+    & h1 {
+        font-size: 4em;
+    }
+
+    & a {
+        font-size: 2em;
+        margin: 0.5em 1em;
+    }
+}

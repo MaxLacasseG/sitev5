@@ -1,0 +1,32 @@
+body {
+    overflow: hidden;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-color: $section;
+    &.accueil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: radial-gradient(
+            circle,
+            #ac987e,
+            #9f8175,
+            #8b6c6e,
+            #715b66,
+            #554c59,
+            #46404c,
+            #38353f,
+            #2b2a32,
+            #242126,
+            #1b181b,
+            #110e10,
+            #000000
+        );
+        & h1 {
+            animation: showTitleAnim 4s ease 1s;
+        }
+    }
+}
